@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background: #000000;
+  color: white;
+  font-family: "Fira Code", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 15px;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: #ff914d;
+}
+
+.tag {
+  font-size: 5rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 30px;
+  background-color: #ff914d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 0 20px #ff914d;
+  cursor: pointer;
+}
+
+button.blue {
+  background-color: #37b6ff;
+  box-shadow: 0 0 20px #37b6ff;
+}
+
+img {
+  margin: auto;
+  width: 200px;
+}
+
+.css {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 50px;
+}
+
+#bg-hero-svg {
+  position: absolute;
+  z-index: -2;
+  -webkit-filter: blur(2rem);
+  filter: blur(2rem);
+  fill: rgba(194, 59, 6, 0.5);
+  transition: all 0.3s ease-in-out;
+  width: 100%; /* Assure que le SVG prend toute la largeur du conteneur */
+}
+
+a {
+  color: #a214de;
+}
+
+#bg-hero-svg-blue {
+  position: absolute;
+  z-index: -2;
+  -webkit-filter: blur(2rem);
+  filter: blur(2rem);
+  fill: rgba(6, 109, 194, 0.5);
+  transition: all 0.3s ease-in-out;
+  width: 100%; /* Assure que le SVG prend toute la largeur du conteneur */
+}
