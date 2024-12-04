@@ -36,3 +36,20 @@ document.querySelectorAll(".showResponseButton").forEach((button) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Récupère la partie de l'URL après le #
+  const hash = window.location.hash.substring(1);
+
+  // Vérifie si un hash est présent
+  if (hash) {
+    // Sélectionne l'élément correspondant
+    const element = document.getElementById(hash);
+
+    // Vérifie si l'élément existe
+    if (element) {
+      // Applique le style display: block
+      element.style.display = "flex";
+    }
+  }
+});
